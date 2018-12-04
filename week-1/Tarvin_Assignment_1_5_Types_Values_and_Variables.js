@@ -19,7 +19,7 @@
 
 var myFirstName = "David";
 var myLastName = "Tarvin";
-var todaysDate = (new Date().getMonth() + 1 + "/" + new Date().getDate() + "/" + new Date().getFullYear());
+var todaysDate = new Date().toLocaleDateString('en-us');
 var assignmentNum = "Assignment 1.5";
 
 var programHeader = "\n" + myFirstName + " " + myLastName + "\n"
@@ -45,7 +45,7 @@ for (var i = 0; i < 5; i++) {
     console.log("Middle Name: " + employeeMiddleName[i]);
     console.log("Address: " + streetAddress[i] + " " + city[i] + ", " + state[i]);
     console.log("Pay Rate: $" + payRate[i].toFixed(2));
-    console.log("Hire Date: " + (hireDate[i].getMonth() + 1) + "/" + hireDate[i].getDate() + "/" + hireDate[i].getFullYear() + "\n");
+    console.log("Hire Date: " + hireDate[i].toLocaleDateString('en-us') + "\n");
 }
 
 // end of program 
