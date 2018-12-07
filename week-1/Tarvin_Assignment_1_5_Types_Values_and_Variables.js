@@ -1,8 +1,8 @@
 /*
 ============================================
 ; Title:  Assignment 1.5
-; Author: Albert Einstein
-; Date:   25 June 2017
+; Author: Richard Krasso
+; Date:   29 November 2018
 ; Modified By: David Tarvin
 ; Description: This program demonstrates the
 ;   use of JavaScript types, values, and 

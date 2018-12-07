@@ -1,16 +1,13 @@
-// start program
-
 /*
-    Expected output:
-    
-    First name
-    Last name
-    Age
-    Street
-    City
-    State 
-    Zip code 
-*/ 
+============================================
+; Title:  Tarvin_Assignment_2_4.js
+; Author: Professor Krasso 
+; Date:   06 December 2018
+; Modified By: David Tarvin
+; Description: Creating functions with and
+;              without parameters
+;===========================================
+*/
 
 // variable declaration and assignment goes here ...
 var firstName = "David";

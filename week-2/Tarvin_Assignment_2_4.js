@@ -39,26 +39,6 @@ var numFloat = function convertToFloat(string) {
     return parseFloat(string);
 }
 
-console.log("\nTest of fullName function:", fullName("David", "Tarvin"));
-
-console.log("Test of dateWriter function:", dateWriter(2018, 11, 6));
-
-console.log("Test of formatNumber function:", formatNumber(33.526, 1));
-
-console.log("Test of convertToInt function:", numInt("49.4"));
-
-console.log("Did the string in convertToInt change to a number? ", !isNaN(numInt("49.4")));
-
-console.log("Did the string in convertToInt change to an integer? ", Number.isInteger(numInt("49.4")));
-
-console.log("Test of convertToFloat function:", numFloat("842.57"));
-
-console.log("Did the string in convertToFloat change to a number? ", !isNaN(numFloat("49.4")));
-
-console.log("Did the string in convertToFloat change to a integer? ", Number.isInteger(numFloat("842.57")));
-
-console.log("\n-----------------------------------------------------------------\n");
-
 console.log("Hello my name is", fullName("David", "Tarvin!"), "\n");
 
 console.log("Today's date is", dateWriter(2018, 11, 6), "and the current temperature is", formatNumber(33.526, 1), "degrees.\n");
