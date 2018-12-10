@@ -1,7 +1,7 @@
 /*
 ============================================
 ; Title:  Tarvin_Assignment_2_4.js
-; Author: Professor Krasso 
+; Author: Professor Krasso
 ; Date:   06 December 2018
 ; Modified By: David Tarvin
 ; Description: Creating functions with and
@@ -15,28 +15,28 @@ console.log(header.display("David", "Tarvin", "Week 2"));
 
 // create function to return first and last name
 function fullName(firstName, lastName) {
-    return firstName + " " + lastName;
+  return firstName + " " + lastName;
 }
 
 // create function to return a new date
 function dateWriter(year, month, day) {
-    return new Date(year, month, day).toLocaleDateString('en');
+  return new Date(year, month, day).toLocaleDateString('en');
 }
 
-// create function to format and return a number 
+// create function to format and return a number
 // with a fixed number of decimal places
 function formatNumber(number, numOfFixedPositions) {
-    return number.toFixed(numOfFixedPositions);
+  return number.toFixed(numOfFixedPositions);
 }
 
 // create function to turn a string into an integer
 var numInt = function convertToInt(string) {
-    return parseInt(string);
+  return parseInt(string);
 }
 
 // create function to turn a string into a float
 var numFloat = function convertToFloat(string) {
-    return parseFloat(string);
+  return parseFloat(string);
 }
 
 console.log("Hello my name is", fullName("David", "Tarvin!"), "\n");
