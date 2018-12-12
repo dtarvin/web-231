@@ -1,9 +1,8 @@
 /*
 ============================================
 ; Title:  Tarvin_Assignment_2_4.js
-; Author: Professor Krasso
+; Author: David Tarvin
 ; Date:   06 December 2018
-; Modified By: David Tarvin
 ; Description: Creating functions with and
 ;              without parameters
 ;===========================================
