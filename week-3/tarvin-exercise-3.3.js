@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  Tarvin_Assignment_2_4.js
+; Title:  tarvin-exercise-3.3.js
 ; Author: Richard Krasso
 ; Date:   06 December 2018
 ; Modified by: David Tarvin
