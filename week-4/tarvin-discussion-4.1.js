@@ -13,7 +13,7 @@ for (let i = 0; i < vehicles.length; i++) {
     if (vehicles['i'].length > 4) {
         specialVehicles[i] = vehicles[i];
     } else {
-        specialVehicles[i] = 'nada';
+        specialVehicles[i] = nada;
     }
     console,log(specialVehicles[i]);
 }
