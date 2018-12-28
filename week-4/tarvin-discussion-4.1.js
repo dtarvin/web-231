@@ -7,6 +7,11 @@
 ;===========================================
 */
 
+// display header at beginning of program
+const header = require('../Tarvin-header.js');
+console.log(header.display("David", "Tarvin", "Discussion 4.1"));
+console.log("");
+
 const vehicles = ['car', 'plane', 'train', 'bike', 'scooter'];
 const specialVehicles = [];
 for (let i = 0; i < vehicles.length; i++) {
