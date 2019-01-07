@@ -2,7 +2,7 @@
 ============================================
 ; Title:  tarvin-exercise-5.2.js
 ; Author: David Tarvin
-; Date:   28 December 2018
+; Date:   07 January 2019
 ; Description: ES5 Built-In Functions
 ;===========================================
 */
