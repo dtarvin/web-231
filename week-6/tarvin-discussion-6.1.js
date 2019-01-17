@@ -1,8 +1,8 @@
  /*
 ============================================
-; Title:  tarvin-assignment-4.4.js
+; Title:  tarvin-discussion-6.1.js
 ; Author: David Tarvin
-; Date:   28 December 2018
+; Date:   17 January 2019
 ; Description: Objects and Built-In Objects
 ;===========================================
 */
