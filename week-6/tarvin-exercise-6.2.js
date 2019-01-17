@@ -3,7 +3,7 @@
 ; Title:  tarvin-exercise-6.2.js
 ; Author: David Tarvin
 ; Date:   17 January 2019
-; Description: Objects and Built-In Objects
+; Description: Exception Handling
 ;===========================================
 */
 
