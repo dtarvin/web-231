@@ -1,0 +1,91 @@
+html  
+ {font size=16px;} 
+ font-family: 'Oswald', sans-serif;
+ font weight: 300;
+ font-family: 'Oswald', sans-serif;
+ font weight: 500;
+ font-family: 'Oswald', sans-serif;
+ font weight: 700;
+font-family: 'Quattrocento', serif;
+font weight: 400;
+font-family: 'Quattrocento', serif;
+font weight: 700;
+
+p {font family: "Quattrocento", Georgia,"Times New Roman",serif;
+    font weight: 400;
+    font-size: 1.4em;
+}
+h1 {font-family: 'Oswald', Verdana, Arial, sans-serif;
+font weight: 700;
+font size: 4.768em;
+margin: 0;
+    padding-bottom: .5em; }
+h2 {font-family: 'Oswald', Verdana, Arial, sans-serif;
+    font weight: 500;font size: 2.441em;
+    margin: 0;
+        padding-bottom: .5em; }
+address {font family: "Quattrocento", Georgia, "Times New Roman", serif;
+    font weight: 400;
+    font-size: 0.8em;
+}
+Dark Knight {
+    padding-top: .5em;
+    font-weight: bold;
+    font-size: 1em;
+    color: darkblue;
+}
+sentence {
+    
+    font family: "Quattrocento", Georgia, "Times New Roman", serif;
+    font weight: 400;
+    font-size: 3.052em;
+    background-color:rgb(247, 112, 34);
+
+}
+
+h3 {
+    font-family: 'Oswald';
+    font-weight: 500;
+}
+
+ol {
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+    font-weight: 300;
+    border: 1px solid red;
+ 	padding: 10px;
+	border-radius: 15px;
+     list-style-position: inside;
+     background-color:rgb(247, 112, 34);
+     color:white;
+
+}
+
+ul {
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+    font-weight: 300;
+border: 1px dashed red;
+ 	padding: 10px;
+	border-radius: 15px;
+      list-style-type: none;   
+   
+}
+
+a {
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+    text-decoration: none }
+
+figure {
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+    font-weight: 400
+}
+
+body {
+    background-color:rgba(247, 112, 34, 0.274) ;
+}
+h1{ background-color:rgba(185, 63, 8, 0.5);}
+
+    h2{ background-color:rgba(185, 63, 8, 0.5);}
+
+#movies{background-color:rgba(204, 83, 23);}
+
+    

@@ -17,7 +17,7 @@ var x = 0,
     y = 10;
 
 
-while (x < y || x < x - y) {
+while (x < y || x < (x - y)) {
   console.log("x = " + x);
   x++;
   console.log(y - x + " more iterations to go\n");
