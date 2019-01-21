@@ -18,4 +18,4 @@ var ticket = {
     requestor: "David Niven"
 };
 
-console.log(ticket);
+console.log('{id: ' + ticket.id + ', name: ' + ticket.name + ', requestor: ' + ticket.requestor + '}');
