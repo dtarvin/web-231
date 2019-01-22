@@ -1,0 +1,56 @@
+<!--
+============================================
+; Title:  tarvin-discussion-7.1.html
+; Author: David Tarvin
+; Date:   22 January 2019
+; Description: JavaScript Selectors with
+;              Errors
+;===========================================
+-->
+
+!<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Discussion 7.1 with Errors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+  <h1>Life is What You Make It</h1>
+  <p>To really succeed in life, you have to have the proper attitude.
+    You can accomplish nothing if you always feel depressed. Get over
+    your worries and anxieties and go show the world what you're made of!
+  </p>
+  <p>
+    Money is not the end all and be all of society. When they say Money
+    can't buy happiness, they're right. Material possessions will
+    ultimately not satisfy you. Relationships are the key.
+  </p>
+  <h2>Here are my goals for today:</h2>
+  <ul>
+    <li>Smile at 20 people</li>
+    <li class="getBold">Ask my boss how he's doing</li>
+    <li class="getBold">Kiss my wife and kids goodbye before leaving for work</li>
+    <li>Walk one mile</li>
+  </ul>
+  <p id="italicizeIt">Every day can be better than the last!</p>
+
+  <script>
+    // turn all paragraphs red
+    var textColor = document.getElementsByTagName(p);
+    for (var i = 0; i < textColor.length; i++) {
+      textColor[i].style.color = "red";
+    }
+    // bold the middle two list items
+    var boldThoseListItems = document.getElementByClassName("getBold");
+    for (var i = 0; i < boldThoseListItems.length; i++) {
+      boldThoseListItems[i].style.fontWeight = "bold";
+    }
+    // italicize the last paragraph
+    var slantLastParagraph = document.getElementByID('italicizeIt');
+    slantLastParagraph.style.fontStyle = "italics";
+  </script>
+</body>
+</html>

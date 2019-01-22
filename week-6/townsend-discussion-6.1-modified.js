@@ -34,11 +34,3 @@ pizzas.pizzaTypes = 'Cheese';
 console.log('My second favorite kind of pizza is ' + pizzas.pizzaTypes + '.');
 pizzas.pizzaTypes = 'Sausage';
 console.log('My least favorite kind of pizza is ' + pizzas.pizzaTypes + '.');
-
-
-// expected output
-/*
-My favorite kind of pizza is Pepperoni.
-My second favorite kind of pizza is Cheese.
-My least favorite kind of pizza is Sausage.
-*/
