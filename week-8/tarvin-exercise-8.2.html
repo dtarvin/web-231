@@ -1,0 +1,84 @@
+<!--
+============================================
+; Title:  tarvin-assignment-8.2.html
+; Author: David Tarvin
+; Date:   29 January 2019
+; Description: Dynamic HTML
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarvin Exercise 8.2</title>
+
+    <style type="text/css">
+      html, body {
+          overflow-x: hidden;
+      }
+      ul {
+        list-style: none;
+        font-weight: 300;
+        font-family: Roboto;
+        padding-top: 20px;
+      }
+      #fruits, #fruitListTitle {
+        margin: 0 auto;
+        width: 15%;
+      }
+      #fruitListTitle {
+          text-align: center;
+          font-weight: 500;
+          font-family: Roboto;
+          color: darkblue;
+          width: 100%;
+          background: lightblue;
+          margin: 0 -9999rem;
+          padding: 0.25rem 9999rem;
+      }
+    </style>   
+  </head>
+  
+  <body>      
+    <div id="fruitListTitle" class="full-width"></div>
+    <div id="fruits">
+    </div>
+
+    <script>
+      var fruits = [
+        {
+          id: 1,
+          type: 'Jackfruit'
+        },
+        {
+          id: 2,
+          type: 'Passion Fruit'
+        },
+        {
+          id: 3,
+          type: 'Mulberry'
+        },
+        {
+          id: 4,
+          type: 'Gooseberry'
+        },
+        {
+          id: 5,
+          type: 'Rambutan'
+        }
+      ]
+      fruitListTitle = '<h3>List of Fruits</h3>';
+      document.getElementById('fruitListTitle').innerHTML = fruitListTitle;
+      var listOfFruits = "<ul>";
+      for (let i=0; i < fruits.length; i++) {
+          listOfFruits += "<li>" + fruits[i].id + ": " + fruits[i].type + "</li>";
+      }
+      listOfFruits += "</ul>"
+      document.getElementById('fruits').innerHTML = listOfFruits;
+    </script>
+
+  </body>
+</html>
