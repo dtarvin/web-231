@@ -14,40 +14,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tarvin Exercise 8.2</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <style type="text/css">
       html, body {
-          overflow-x: hidden;
+          overflow-x: hidden; /* Avoids triggering horizontal scrolling on top bar */
       }
       ul {
         list-style: none;
-        font-weight: 300;
-        font-family: Roboto;
+        font-weight: 300; /* Prof didn't say where to use 300, 400 or 500 font-weight */
+        font-family: Roboto; 
         padding-top: 20px;
       }
-      #fruits, #fruitListTitle {
+      #fruits {
         margin: 0 auto;
-        width: 15%;
+        width: 15%; /* Needed to center list - margin: 0 auto alone does not work */
       }
       #fruitListTitle {
-          text-align: center;
-          font-weight: 500;
+          text-align: center; /* Margin: 0 auto doesn't work to center title */
+          font-weight: 500; /* Used 300 on list and 500 on title, no other text left for 400 */
           font-family: Roboto;
           color: darkblue;
-          width: 100%;
+          width: 100%; /* This is for top bar to have full width of screen */
           background: lightblue;
-          margin: 0 -9999rem;
-          padding: 0.25rem 9999rem;
+          margin: 0 -9999rem; /* Negative margin needed to make sure top bar goes edge to edge */
+          padding: 0.25rem 9999rem; /* Negative margin needs to be added back in */
       }
     </style>   
   </head>
   
-  <body>      
+  <body>
+    <!-- Id is for adding title and class is for adding top bar -->
     <div id="fruitListTitle" class="full-width"></div>
+    <!-- This div id is where we'll add the fruits array -->
     <div id="fruits">
     </div>
 
     <script>
+      // This array will be added to the div with the id 'fruits'
       var fruits = [
         {
           id: 1,
@@ -70,13 +73,22 @@
           type: 'Rambutan'
         }
       ]
+      // This heading will be added above the list
       fruitListTitle = '<h3>List of Fruits</h3>';
+      // This line below is what places the title of the list on the page
       document.getElementById('fruitListTitle').innerHTML = fruitListTitle;
+      // We're creating an unordered list using a variable that we'll place
+      // on the DOM. We'll create the list using concatenation and a for loop.
+      // We need to start with the opening <ul> tag, then generate the list, 
+      // then set the closing </ul> tag.
       var listOfFruits = "<ul>";
+      // The for loops iterates over the array and puts each array element
+      // in between list item tags
       for (let i=0; i < fruits.length; i++) {
           listOfFruits += "<li>" + fruits[i].id + ": " + fruits[i].type + "</li>";
       }
       listOfFruits += "</ul>"
+      // The line below places the completed list in the DOM
       document.getElementById('fruits').innerHTML = listOfFruits;
     </script>
 
