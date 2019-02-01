@@ -1,0 +1,107 @@
+<!--
+============================================
+; Title:  tarvin-assignment-8.4.html
+; Author: David Tarvin
+; Date:   01 February 2019
+; Description: Putting it all together
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 8.4</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="site.css">
+
+  <style type="text/css">
+    #employee tbody tr:hover {
+      cursor: pointer;
+      background-color: #ffff99;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Employee Listing</h2>
+  <div id="emps"></div>
+
+  <script type="text/javascript">
+
+    // jQuery onClick event
+    // Don't remove this, just add your code to the body of the event (curly braces)
+    $(function () {
+      function Employee(id, firstName, lastName, title) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.title = title;
+      }
+
+      var employees = [
+        {
+          id: 1,
+          firstName: "Andrew",
+          lastName: "Adams",
+          title: 'Tech Lead'
+        },
+        {
+          id: 2,
+          firstName: "Bob",
+          lastName: "Breaker",
+          title: 'Senior Software Engineer'
+        },
+        {
+          id: 3,
+          firstName: "Carla",
+          lastName: "Conway",
+          title: 'Software Engineer'
+        },
+        {
+          id: 4,
+          firstName: "Donald",
+          lastName: "Dunston",
+          title: 'Associate Software Engineer'
+        },
+        {
+          id: 5,
+          firstName: "Edward",
+          lastName: "Eagleton",
+          title: 'Associate Software Engineer Trainee'
+        }
+      ];
+
+      var output = "<table><tr>";
+      output += "<th>Id</th>";
+      output += "<th>First Name</th>";
+      output += "<th>Last Name</th>";
+      output += "<th>Title</th></tr>";
+
+      for (let i = 0; i < employees.length; i++) {
+        console.log(employees[i].id, employees[i].firstName, employees[i].lastName, employees[i].title);
+        output += "<tr><td>" + employees[i].id + "</td>";
+        output += "<td>" + employees[i].firstName + "</td>";
+        output += "<td>" + employees[i].lastName + "</td>";
+        output += "<td>" + employees[i].title + "</td></tr>";
+      };
+
+      output += "</table>";
+
+      document.getElementById("emps").innerHTML = output;
+
+      function getEmployee(id) {
+        alert(this.id, this.firstName, this.lastName, this.title);
+      }
+
+      $("table tr").click(function () {
+        find('td:first').html();
+        getEmployee(this.id);
+      })
+    });
+  </script>
+</body>
+</html>
