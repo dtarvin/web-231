@@ -1,0 +1,130 @@
+<!--
+============================================
+; Title:  tarvin-assignment-8.2.html
+; Author: David Tarvin
+; Date:   01 February 2019
+; Description: jQuery
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <style>
+      * {
+        font-family: Roboto;
+      }
+
+      html, body {
+        overflow-x: hidden; /* Avoids triggering horizontal scrolling on top bar */
+      }
+
+      #topbar {
+        text-align: center; /* Margin: 0 auto doesn't work to center title */
+        font-weight: 500; /* Used 300 on list and 500 on title, no other text left for 400 */
+        color: darkblue;
+        width: 100%; /* This is for top bar to have full width of screen */
+        background: lightblue;
+        margin: 0 -9999rem; /* Negative margin needed to make sure top bar goes edge to edge */
+        padding: 0.25rem 9999rem; /* Negative margin needs to be added back in */
+    }
+
+      #positionContent {
+        margin-top: 20px;
+        margin-left: 20px; 
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 5px;
+      }
+      
+      th {
+        background-color: steelblue;
+        color: white;
+      }
+      
+      tr:nth-child(even) {
+        background-color: lightsteelblue;
+      }
+    </style>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div id="topbar" class="full-width">
+        <h3>The Lorem Ipsum of it All</h3>
+    </div>
+    
+    <div id="positionContent">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Sed et sem arcu. Maecenas cursus massa id mauris bibendum, 
+        quis ullamcorper magna porta. Donec eleifend mauris eros, a 
+        vulputate lacus ullamcorper ac. Integer sed auctor tellus, id 
+        mattis mauris. Nulla iaculis diam at risus lobortis, eu 
+        vestibulum odio ultrices. Curabitur pulvinar pharetra ultricies. 
+        Sed sollicitudin eros et justo convallis, et finibus nibh 
+        ultricies. Quisque ut neque ullamcorper, imperdiet diam in, 
+        suscipit lectus. Praesent id blandit tortor, eget laoreet enim. 
+        Pellentesque laoreet odio lectus, non tempus purus ultricies eget. 
+        Donec accumsan urna a lorem pretium porta ac ultricies quam. 
+        Quisque auctor erat et turpis convallis, ut bibendum nisl dapibus.
+      </p>
+      <button type="button">Toggle</button>
+      <br>
+      <br>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Type</th>
+        </tr>
+        <tr>
+          <td href="#" class="fruitId">1</td>
+          <td>Jackfruit</td>
+        </tr>
+        <tr>
+          <td href="#" class="fruitId">2</td>
+          <td>Passion Fruit</td>
+        </tr>
+        <tr>
+          <td href="#" class="fruitId">3</td>
+          <td>Mulberry</td>
+        </tr>
+        <tr>
+          <td href="#" class="fruitId">4</td>
+          <td>Gooseberry</td>
+        </tr>
+        <tr>
+          <td href="#" class="fruitId">5</td>
+          <td>Rambutan</td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      $("button").click(function() {
+        $("p").toggle();
+      });
+      $(".fruitId").click(function(event) {
+        event.preventDefault;
+        var fruitId = $(this).text();
+        var fruitType = $(this).closest("td").next().text();
+        alert("{fruit_id:" + fruitId + ", fruit_type:" + fruitType + "}");
+      });
+    </script>
+  </body>
+</html>
