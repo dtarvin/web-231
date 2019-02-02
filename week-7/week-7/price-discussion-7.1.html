@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dom manipulation example on Youtube</title>
+  </head>
+  <body>
+      <section>
+        <img src="javascript-tips.png" alt="JavaScript Tips">
+        <p>Here we will add a link to a <a href="https://www.jstips.co/">short Example on DOM manipulation by freeCodeCamp!</a></p>
+      </section>
+      <script>
+          var link = document.querySelector('a');
+          link.textContent = 'JavaScript Tips!';
+          link.href = "https://youtu.be/eaLKqoB9Fu0";
+      </script>
+  </body>
+</html>
+
+<!-- Expected output is to take you to a DOM manipulation tutorial on youtube. And have JS change the text Content to "short Example on DOM manipulation by freeCodeCamp!"-->
