@@ -1,0 +1,58 @@
+<!--
+============================================
+; Title:  tarvin-discussion-8.1.html
+; Author: David Tarvin
+; Date:   31 January 2019
+; Description: JavaScript in web browsers
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript in Web Browsers</title>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <style>
+    div {
+      height: 60px;
+      width: 100px;
+      border-radius: 5px;
+      background-color: #69D2E7;
+      text-align: center;
+      color: #FFFFFF;
+      font-family: Verdana, Arial, Sans-Serif;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <div id='clickMe'><br/><strong>Click Me!</strong></div>
+  <script>
+    $(div).mouseenter(function() {
+      $(div).fadeTo('fast', 1);
+    });
+    $(div).mouseleave(function() {
+      $(div).fadeTo('fast', 0.5)
+    });
+    var colorValues = ['00', '33', '66', '99', 'cc', 'ff'];
+    var rand = function() {
+      return Math.floor(Math.random()*6);
+    };
+    var randomColorPicker = function() {
+      var r = colorValues[rand()];
+      var g = colorValues[rand()];
+      var b = colorValues[rand()];
+      return "#" + r + g + b;
+    };
+    $(div).click(function() {
+      $('this').css('background', randomColorPicker());
+    });
+  </script>
+</body>
+</html>
