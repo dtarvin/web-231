@@ -1,0 +1,26 @@
+I.	Page load begins
+    	A.	checkForPageLoadErrors - SD_BaseController
+		1.	Check if there are error messages
+		2.	If yes, display details
+    	B.  	loadPolicyDetail - from script at bottom of page
+		1.  	loadPolicyDetail - from controller
+	    		a.  	with this.policyAlertMessages as parameter (where does this come from?)
+	    		b.  	getPolicyAlertMessageWrapper
+				i.    	create new SD_PolicyAlertMessages object called Wrapper
+				ii.   	get the value of policyAlertMessages from the page URL
+				iii.  	if there are any policyAlertMessages
+		      			a.  	deserialize them
+		      			b.  	put them in the Wrapper    
+		      			c.  	then, if the messages in the wrapper do not equal null
+			  			1.  	take the policy number and get the messages (where does policyNumber come from?)
+				iv.   	if the Wrapper is null
+		      			a.  	make the Wrapper a new SD_PolicyAlertMessages object
+				v.    	if the messages property within the Wrapper is null
+		      			a.  	turn the messages property into a new Map object consisting of a string and a list of SD_AlertMessageWrapper.AlertMessage
+				vi.   return the Wrapper
+			c.	set authString to a string that was a blob'd user & password
+ 			d.	set headers and turn into Map
+			e.	take the endpoint and add the policyNumber
+	c.	showPanel - runs on completion of loadPolicyDetail and rerendering of panels
+		1.	Hide policyAlertsSpinner & other spinners
+		2.	show section (
